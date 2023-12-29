@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap');
+/*
+font-family: 'Poppins', sans-serif;
+*/
+
+.bg-nav{
+    background-color: #5F6F52;
+}
+.navbar-brand{
+    font-size: 2,5rem;
+}
+.navbar-collapse{
+    justify-content: end;
+    
+}
+
+.nav-link:hover{
+    color:rgb(108, 155, 99);
+    text-decoration: underline;
+}
+.navbar-brand{
+    font-size: 1.875rem;
+    padding-left: 1.875rem;
+}
+
+.principal{
+    display: flex;
+    background-image: url(../assets/Fondo-de-pagina.jpg);
+    background-position: center;
+    background-size: 100%;
+    font-family: 'Poppins', sans-serif;
+    height: 50rem;
+    width: 100%;
+    justify-content: end;
+    align-items: end;
+}
+.principal div{
+    width: 18.75rem;
+    padding-bottom: 6.25rem;
+}
+.boton{
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    background-color: #292A2E;
+    color: white;
+    padding: 10px 10px;
+    border: .25rem solid #5F6F52;
+    border-radius: .25rem;
+    height: 2.9375rem;
+    width: 9.8125rem;
+    margin: 1.25rem 1.25rem 1.25rem 4.375rem;
+}
+
+.eslogan{
+    height: 50%;
+    width: 100%;
+    grid-column: 2 / 3;
+    
+}
+
+.pie-de-pagina{
+    display: flex;
+    height: 7.25rem;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #5F6F52;
+
+}
+
+.redes{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1.25rem;
+    gap: .625rem;
+
+}
+.registro{
+    font-size: 80%;
+    
+}
+.terminos{
+    display: flex;
+    flex-direction: row;
+    height: 1rem;
+    width: 100%;
+    align-items: center;
+    gap: .625rem;
+}
+.fondo{
+    background-image:url(../assets/fondo-tienda.jpg) ;
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 42rem;
+    width: 100%;
+}
+
+.vendido{
+    display: flex;
+    width: 31.25rem;
+    height: 3.125rem;
+    padding-left: 7.5rem;
+    padding-top: 1rem;
+    
+}
+.cards{
+    display: flex;
+    justify-content: space-around;
+    padding: 3rem;
+    margin-top: 3rem;
+
+}
+.card-propio{
+    background-color: #A9B388;
+    width: 12.5rem;
+    height: 18.75rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.25rem 0rem;
+    box-shadow: .1875rem .1875rem .1875rem #00000056;
+    border-radius: .25rem;
+}
+.card-img-propio img{
+    width: 7rem;
+    height: 9.375rem;
+    border-radius: 10%;
+}
+h4{
+    font-size: 100%;
+}
+h5{
+    font-size: 100%;
+}
+.comprar{
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 80%;
+    background-color: #292A2E;
+    color: white;
+    padding: 10px 10px;
+    border: .25rem solid #5F6F52;
+    border-radius: .25rem;
+    height: 2.9375rem;
+    width: 6.25rem;
+}
+.ver-mas{
+    display: flex;
+    justify-content: end;
+    padding-right: 1.875rem;
+}
+.ver-mas-boton{
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 80%;
+    background-color: #292A2E;
+    color: white;
+    padding: 10px 10px;
+    border: .25rem solid #5F6F52;
+    border-radius: .25rem;
+    height: 2.9375rem;
+    width: 6.25rem; 
+}
+
+.nosotros{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    height: 100%;
+    width: 100%;
+    gap: .625rem;
+    justify-items: center;
+    
+}
+.h3-propio{
+    grid-column: 2 / 5;
+    grid-row: 2 / 5;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 134%;
+    order: 2;
+    
+}
+
+.nosotros img{
+    grid-column: 5 /8;
+    grid-row: 2 / 5;
+    height: 100%;
+    width: 80%;
+    order: 2;
+}
+
+.fondo-nosotros{
+    background-color: #fffdfdb0;
+    grid-column: 2 /8;
+    grid-row: 2 / 5;
+    order: 1;
+    height: 100%;
+    width: 100%;
+
+
+}
