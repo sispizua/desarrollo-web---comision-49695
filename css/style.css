@@ -3,43 +3,55 @@
 font-family: 'Poppins', sans-serif;
 */
 
-.bg-nav{
+
+.barra-de-navegacion{
     background-color: #5F6F52;
-}
-.navbar-brand{
-    font-size: 2,5rem;
     font-family: 'Poppins', sans-serif;
+    padding: .625rem;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
 }
-.navbar-collapse{
-    justify-content: end;
-    font-family: 'Poppins', sans-serif;
-    
+.menu ul li{
+    display: inline;
+    flex-wrap: wrap;
+}
+.menu ul li:hover{
+    text-decoration: underline;
+
+}
+.titulo a{
+    font-size: 2rem;
+    text-decoration: none;
+    color: black;
 }
 
-.nav-link:hover{
-    color:rgb(108, 155, 99);
-    text-decoration: underline;
+.barra-de-navegacion ul li{
+    list-style: none;
+    font-family:'Poppins', sans-serif;  
 }
-.navbar-brand{
-    font-size: 1.875rem;
-    padding-left: 1.875rem;
+.barra-de-navegacion ul li a{
+    color: black;
+    text-decoration: none;
+    margin: .625rem;
 }
 
 .principal{
     display: flex;
+    flex-direction: column;
     background-image: url(../assets/Fondo-de-pagina.jpg);
     background-position: center;
     background-size: 100%;
+    background-repeat: none;
     font-family: 'Poppins', sans-serif;
     height: 40rem;
     width: 100%;
-    justify-content: end;
+    justify-content: center;
     align-items: end;
 }
-.principal div{
-    width: 18.75rem;
-    padding-bottom: 6.25rem;
-}
+
+
 .boton{
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
@@ -50,16 +62,18 @@ font-family: 'Poppins', sans-serif;
     border-radius: .25rem;
     height: 2.9375rem;
     width: 9.8125rem;
-    margin: 1.25rem 1.25rem 1.25rem 4.375rem;
+    
 }
 
 .eslogan{
-    height: 50%;
-    width: 100%;
+    height: 40%;
+    width: 30%;
     color: #5F6F52;
     text-shadow: -1px -1px 1px white, 1px -1px 1px white, -1px 1px 1px white, 1px 1px 1px white;
     letter-spacing: .125rem;
-    padding: 1.25rem;
+    padding-bottom: 3.125rem;
+    
+    
     
 }
 
@@ -82,6 +96,7 @@ font-family: 'Poppins', sans-serif;
 }
 .registro{
     font-size: 80%;
+    gap: 20px
     
 }
 .terminos{
@@ -255,4 +270,156 @@ h5{
     background-color: #ffffffbe;
     order: 1;
     align-self: center;
+}
+
+.mi-cuenta{
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    height: 100%;
+    width: 100%;
+    gap: .625rem;
+    font-family: 'Poppins', sans-serif;
+
+}
+.texto-cuenta{
+    grid-column: 4 / 8;
+    grid-row: 3 / 4;
+    height: 100%;
+    width: 100%;
+    order: 2;
+
+}
+.formulario{
+    grid-column: 4 / 8;
+    grid-row: 4 / 9;
+    height: 100%;
+    width: 100%;
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    
+
+}
+    
+.fondo-cuenta{
+    grid-column: 3 / 9;
+    grid-row: 2 / 10;
+    height: 100%;
+    width: 100%;
+    background-color: #ffffffbe;
+    order: 1;
+    align-self: center;
+}
+.boton-cuenta{
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 80%;
+    background-color: #292A2E;
+    color: white;
+    border: .25rem solid #5F6F52;
+    border-radius: .25rem;
+    height: 2.8125rem;
+    width: 12.5rem;
+    margin-top: 1.875rem;
+    
+}
+@media(max-width:769px){
+    .principal{
+        height: 50rem;
+        width: 100%;
+    }
+    .pie-de-pagina{
+        height: 100%;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: repeat(2, 1fr);
+    }
+.redes{
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    height: 100%;
+    width: 100%;
+    grid: flex;
+    justify-content: start;
+}
+.novedades{
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    height: 100%;
+    width: 100%;
+}
+.registro{
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+
+}
+}
+@media(max-width:321px){
+    .barra-de-navegacion{
+        display: flex;
+        flex-direction: column;
+    }
+    .menu{
+        display: flex;
+        justify-content: start;
+
+    }
+    .menu ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        padding-left: 0;
+    }
+    .menu ul li{
+        width: 3.125rem;
+    }
+    .principal{
+        display: flex;
+        background-image: url(../assets/Fondo-de-pagina.jpg);
+        background-position: center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        font-family: 'Poppins', sans-serif;
+        height: 25rem;
+        width: 100%;
+        justify-content: center;
+        align-items: end;
+    }
+    .menu{
+        font-size: .75rem;
+        height: 4.375rem;
+        width: 9.375rem;
+    }
+    .eslogan{
+        height: 30%;
+        display: flex;
+        font-size: 50%;
+        padding-bottom: 0;
+    
+    }
+    .eslogan h1{
+        font-size: 1.125rem;
+    }
+    .boton{
+        height: 50%;
+        width: 100%;
+        font-size: .75rem;    
+    
+    }
+    .pie-de-pagina{
+        display: flex;
+        flex-direction: column;
+    }
+    .novedades{
+        padding: .3125rem;
+
+    }
 }
