@@ -8,9 +8,11 @@ font-family: 'Poppins', sans-serif;
 }
 .navbar-brand{
     font-size: 2,5rem;
+    font-family: 'Poppins', sans-serif;
 }
 .navbar-collapse{
     justify-content: end;
+    font-family: 'Poppins', sans-serif;
     
 }
 
@@ -29,7 +31,7 @@ font-family: 'Poppins', sans-serif;
     background-position: center;
     background-size: 100%;
     font-family: 'Poppins', sans-serif;
-    height: 50rem;
+    height: 40rem;
     width: 100%;
     justify-content: end;
     align-items: end;
@@ -54,7 +56,10 @@ font-family: 'Poppins', sans-serif;
 .eslogan{
     height: 50%;
     width: 100%;
-    grid-column: 2 / 3;
+    color: #5F6F52;
+    text-shadow: -1px -1px 1px white, 1px -1px 1px white, -1px 1px 1px white, 1px 1px 1px white;
+    letter-spacing: .125rem;
+    padding: 1.25rem;
     
 }
 
@@ -64,6 +69,7 @@ font-family: 'Poppins', sans-serif;
     justify-content: space-between;
     align-items: center;
     background-color: #5F6F52;
+    font-family: 'Poppins', sans-serif;
 
 }
 
@@ -87,12 +93,13 @@ font-family: 'Poppins', sans-serif;
     gap: .625rem;
 }
 .fondo{
-    background-image:url(../assets/fondo-tienda.jpg) ;
+    background-image:url(../assets/fondo-tienda.jpg);
     background-position: center;
     background-size: 100%;
     background-repeat: no-repeat;
     height: 42rem;
     width: 100%;
+    font-family: 'Poppins', sans-serif;
 }
 
 .vendido{
@@ -172,34 +179,80 @@ h5{
     gap: .625rem;
     justify-items: center;
     
+    
 }
-.h3-propio{
+.h3-propio-1{
     grid-column: 2 / 5;
-    grid-row: 2 / 5;
+    grid-row: 2 / 3;
     height: 100%;
     width: 100%;
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
-    font-size: 134%;
+    font-size: 120%;
     order: 2;
+    text-align: center;
+    
     
 }
-
+.h3-propio-2{
+    grid-column: 2 / 5;
+    grid-row: 3 / 5;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 120%;
+    order: 2;
+    text-align: center;
+    
+}
 .nosotros img{
     grid-column: 5 /8;
     grid-row: 2 / 5;
-    height: 100%;
-    width: 80%;
+    height: 90%;
+    width: 70%;
     order: 2;
+    align-self: center;
 }
 
 .fondo-nosotros{
-    background-color: #fffdfdb0;
+    background-color: #ffffffbe;
     grid-column: 2 /8;
     grid-row: 2 / 5;
     order: 1;
     height: 100%;
     width: 100%;
-
-
+}
+.ubicacion{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    height: 100%;
+    width: 100%;
+    gap: .625rem;
+    font-family: 'Poppins', sans-serif;
+}
+.texto-ubicacion{
+    grid-column: 4 / 8;
+    grid-row: 2 / 3;
+    height: 100%;
+    width: 100%;
+    order: 2;
+}
+.mapa{
+    grid-column: 4 / 8;
+    grid-row: 3 / 7;
+    height: 100%;
+    width: 100%;
+    order: 2;
+    align-self: center;
+}
+.fondo-ubicacion{
+    grid-column: 3 / 9;
+    grid-row: 2 / 7;
+    height: 100%;
+    width: 100%;
+    background-color: #ffffffbe;
+    order: 1;
+    align-self: center;
 }
